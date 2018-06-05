@@ -4,7 +4,8 @@
   "description": "Server-side Rendering with React",
   "main": "index.js",
   "scripts": {
-    "dev:build:server": "webpack --config webpack.server.js --mode development"
+    "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
+    "dev:build:server": "webpack --config webpack.server.js --mode development --watch"
   },
   "repository": {
     "type": "git",
